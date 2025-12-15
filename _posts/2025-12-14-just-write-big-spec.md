@@ -45,12 +45,6 @@ Documentation tries to approximate it, but documentation is always lossy.
 
 So you can hand a model a “complete spec,” and it can still produce something technically correct while completely missing what you meant.
 
-That transformation drops detail at every step.
-
-If we could perfectly convert imagination into text, we’d all be writing best-selling novels. We’re not—because translating intent into software is itself a skill.
-
-Now apply that to software, where the space of “valid” implementations is enormous.
-
 ---
 
 ## “Add Two Numbers” Is Not the Point
@@ -60,45 +54,32 @@ But the addition function *you* need might imply:
 
 - precision rules, rounding, currency / locale constraints  
 - overflow behavior, performance targets, vectorization  
-- auditability, determinism, reproducibility  
 - telemetry, error budgets, SLA expectations  
-- dependency boundaries, layering, security posture  
-- future extension points that aren’t “requirements” yet—but are obvious to experienced engineers  
+- future extension points that aren’t “requirements” yet
 
-Textbook examples don’t contain that nuance.  
-Most public code doesn’t either.
-
-Those artifacts are thin slices of reality.
+Textbook examples don’t contain that nuance, most public code doesn’t either.
 
 So the model can generate **an** addition function—but not necessarily **your** addition function: the one aligned with your product’s value and constraints.
-
-That translation is what senior engineers do better than juniors, even with the same prompt and the same stated goal: they fill in the missing intent, reconcile constraints, and choose tradeoffs deliberately.
 
 ---
 
 ## This Isn’t Just a Software Problem
 
-You can see the same gap in other modalities:
-
-- **Image models**  
-  “Show me a train” is not a universal request. A photographer produces a compelling train photo because they understand composition, lighting, lens choice, framing, mood, and audience taste. The model can output “a train,” but not reliably the one you meant.
-
-- **Audio / video models**  
-  Same story—prompting is not direction, craft, or production.
+You can see the same gap in image generation as well: “Photo of a train” is not a universal request. A photographer will produce be able to iterate on a prompt for a more compelling train photo because they understand composition, lighting, lens choice, framing, mood, and audience taste. The model can output “a photo of a train,” but not reliably the one you meant or one with mass appeal.
 
 **The medium is not the idea.**
 
 Models are good at producing media. Humans are still better at translating intention into media with mass appeal.
 
-And mass appeal matters. Your output doesn’t just have to satisfy you and your mom—it has to land for other people.
+And mass appeal matters. Your output doesn’t just have to satisfy you and your brother's taste—it has to land for other people.
 
 ---
 
-## Why Platforms Are Investing So Hard in Infrastructure
+## Why Invest Half a Trillion into Infrastructure?
 
-There’s a second, economic layer to this.
+So how does OpenAI, Anthropic, Google, Microsoft, et. al. intend to fix this?
 
-The more these systems are used, the more they can learn the missing bridge through feedback loops:
+Real-use-case feedback loops.
 
 - humans correcting outputs  
 - rejecting wrong interpretations  
