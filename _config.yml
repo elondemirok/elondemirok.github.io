@@ -1,0 +1,24 @@
+title: Elondemirok GitHub Pages
+email: your-email@example.com
+description: >-
+  Personal site powered by Jekyll and the minima theme.
+baseurl: ""
+url: "https://elondemirok.github.io"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+
+# Minima skin and social links can be customized here
+minima:
+  skin: dark
+  social_links:
+    github: elondemirok
