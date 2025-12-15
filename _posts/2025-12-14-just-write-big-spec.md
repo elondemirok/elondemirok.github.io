@@ -13,7 +13,7 @@ Today’s LLMs can operate on both sides of the equation:
 - They understand language and can generate language.
 - They understand code and can generate code.
 
-But the crucial bridge between idea to faithful** implementation is still mostly inside our heads and is shaped by hundreds of iterations we do on an idea before we choose to implement it as it is.
+But the crucial bridge between idea to **faithful** implementation is still mostly inside our heads and is shaped by hundreds of iterations we do on an idea before we choose to implement it as it is.
 
 And that’s why long specs often die on the vine... for now.
 
