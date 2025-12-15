@@ -1,7 +1,7 @@
-title: Elondemirok GitHub Pages
-email: your-email@example.com
+title: AI Metallurgy
+# email: your-email@example.com
 description: >-
-  Personal site powered by Jekyll and the minima theme.
+  Putting together pieces of AI
 baseurl: ""
 url: "https://elondemirok.github.io"
 
@@ -20,5 +20,3 @@ defaults:
 # Minima skin and social links can be customized here
 minima:
   skin: dark
-  social_links:
-    github: elondemirok
