@@ -90,13 +90,13 @@ Instead of betting on a 30-page spec, you’ll get more progress from:
 - quick “show me” slices  
 - tests as executable intent  
 - traceable decisions (ADRs, design notes)  
-- structured constraints (“must be deterministic,” “must be auditable,” “must survive X”)  
+- structured constraints (“must survive X”, "must not break under Y")  
 
 ### 3) The Winners Will Build Idea-Capture Systems, Not Just Models
 
 The real breakthrough isn’t “smarter autocomplete.”
 
-It’s instrumentation that captures intent:
+It’s going to be instrumentation that captures intent:
 
 - decisions made during implementation  
 - corrections and *why* they happened  
@@ -115,10 +115,10 @@ They can mimic competence.
 
 But the thing we mistake for “spec completeness”—the belief that language can fully represent intent—is exactly where projects fail.
 
-The future isn’t:
+The current way of doing it isn’t:
 
 > Humans write big specs and models write software.
 
-The future is tighter loops, continuous intent capture, platform-hosted compute, and a truth that hasn’t changed:
+Try tighter loops and continuous intent capture.
 
 **The most valuable human skill is translating messy ideas into real products that people actually want.**
