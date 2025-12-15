@@ -1,26 +1,21 @@
 ---
-title: "Why Just Write a Big Spec Fails With Today’s LLMs"
-description: "Thoughts on why long specs miss the mark and how to keep ideas close to the code."
+title: "Writing a Big Spec Fails. For now."
+description: "Explaining why long specs miss the mark"
 ---
-# Why “Just Write a Big Spec” Fails With Today’s LLMs — and What Actually Works
+# Why "Big Spec” Fails
 
-Large language models can write software. They can also write documentation. And yet, anyone who’s tried to build something real with them knows the uncomfortable truth: **the code is often the easy part**.
+Anyone who’s tried to build something with AI knows the truth: **the code is often the easy part**.
 
-The hard part is the translation.
-
-Not “translate English to Python.”  
-Not “turn requirements into a REST API.”
-
-I mean the deeper translation: the messy, high-fidelity mental model a senior engineer holds—the intent, the tradeoffs, the edge cases, the product shape, the constraints, the taste—and the conversion of that into something shippable.
+The hard part is the translation. I mean the deeper translation: the messy, high-fidelity mental model we hold: the intent, the tradeoffs, the edge cases, the product shape, the constraints, the taste... the conversion of thought into code.
 
 Today’s LLMs can operate on both sides of the equation:
 
 - They understand language and can generate language.
 - They understand code and can generate code.
 
-But the crucial bridge between **idea → faithful implementation** is still mostly inside our heads.
+But the crucial bridge between idea to faithful** implementation is still mostly inside our heads and is shaped by hundreds of iterations we do on an idea before we choose to implement it as it is.
 
-And that’s why long specs often die on the vine.
+And that’s why long specs often die on the vine... for now.
 
 ---
 
@@ -34,26 +29,19 @@ Most training data the models see looks like this:
 
 What they rarely see is the real creative pipeline:
 
-- the half-formed idea  
-- the messy sketches  
-- the evolving intent  
-- the business pressure  
-- the “oh wait, that assumption is wrong” moment  
-- the repeated human corrections  
-- the thousand micro-decisions that shape a product  
+- the half-formed idea
+- the messy sketches
+- the evolving intent
+- the PRD, ADR, RFC
+- the business pressure
+- the “oh wait, that assumption is wrong” moment, discovery
+- the repeated human corrections
+- the random experiment
+- the thousand micro-decisions that shape a product
 
-In real engineering work, the ideas that become the code are not captured cleanly side-by-side with the final code. They happen in conversations, in someone’s head, on a whiteboard, in a notebook, or in a Slack thread that disappears into history.
+At work, the ideas that become the code are not captured cleanly side-by-side with the final code. They happen in conversations, in someone’s head, on a whiteboard, in a wiki page, or in a Slack thread.
 
-Documentation tries to approximate it—but documentation is always lossy.
+Documentation tries to approximate it, but documentation is always lossy.
 
 So you can hand a model a “complete spec,” and it can still produce something technically correct while completely missing what you meant.
 
----
-
-## Why a Long Spec Can Still Produce Nothing
-
-A long spec assumes that if you describe enough, the system can reconstruct the intended product.
-
-But **description fidelity isn’t reality fidelity**.
-
-There’s a classic compression problem here:
